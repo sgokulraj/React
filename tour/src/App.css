@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.app {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.titlecontainer {
+    margin: 50px 20px;
+}
+
+.heading {
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.underline {
+    height: 5px;
+    width: 80px;
+    border-radius: 25px;
+    background-color: darkcyan;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width:1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        display: block;
+    }
+}
+
+
+.tour {
+    margin: 2rem auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 0px;
+    padding-bottom: 20px;
+}
+
+.refresh {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.refresh h1 {
+    margin-bottom: 20px;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.tourHead {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem
+}
+
+.tourHead h4 {
+    color: rgb(6, 94, 91);
+}
+
+.tourInfo {
+    padding: 20px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.tourInfo button{
+    border: transparent;
+    background-color: transparent;
+    color: blue;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.btnContainer {
+    text-align: center;
+}
+
+.btn-not,
+.refresh button {
+    border: transparent;
+    background-color: gold;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    /* margin: 0 50vw */
+
+}
